@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+ 
+<script src="https://cdn.bootcss.com/rxjs/6.0.0-alpha.3/Rx.min.js"></script>
+
+<script>
+ 
+	const ob = Rx.Observable.interval(1000);
+	ob.take(3).map(n => n * 2).filter(n => n > 2).subscribe(n => console.log(n));
+ 
+
+</script>
+</body>
+</html>
